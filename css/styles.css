@@ -1,0 +1,258 @@
+/*ZERO STYLES*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*GLOBAL*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0F0F0F;
+    color: white;
+}
+
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*HEADER*/
+.header {
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: #0F0F0F;*/
+    background: rgba(8, 8, 8, 0.50);
+    backdrop-filter: blur(4.5px);
+}
+
+.header__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header__brand {
+    color: #ECBC61;
+    font-size: 42px;
+    font-weight: 800;
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__list li {
+    margin: 0 0 0 20px;
+}
+
+.header__link {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.header__link.header__link_active {
+    color: #ECBC61;
+}
+
+.header__link:hover {
+    color: #ECBC61;
+    transition: all 0.3s;
+}
+
+.menu-burger {
+    display: none;
+}
+
+.arrow-back {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+/*SECTION ABOUT*/
+.about {
+    padding: 100px 0 0 0;
+}
+
+/*MEDIA*/
+@media (max-width: 767px) {
+    body.active {
+        overflow: hidden;
+    }
+
+    .header__body {
+        height: 50px;
+    }
+
+    /*menu-burger*/
+    .menu-burger {
+        display: block;
+        position: relative;
+        width: 47px;
+        height: 21px;
+    }
+
+    .menu-burger span {
+        position: absolute;
+        background-color: #ECBC61;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        border-radius: 5px;
+    }
+
+    .menu-burger::before,
+    .menu-burger::after {
+        content: '';
+        background-color: #ECBC61;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+
+    .menu-burger::before {
+        top: 1px;
+    }
+
+    .menu-burger::after {
+        bottom: 2px;
+    }
+
+    .menu-burger.active {
+        display: none;
+    }
+
+    /*arrow-back*/
+    .arrow-back {
+        opacity: 0;
+        position: fixed;
+        width: 47px;
+        height: 21px;
+        left: 10px;
+        top: 25px;
+        z-index: 3;
+    }
+
+    .arrow-back.active {
+        opacity: 1;
+        transition: all 2s;
+    }
+
+    .arrow-back span {
+        position: absolute;
+        background-color: #ECBC61;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        border-radius: 5px;
+    }
+
+    .arrow-back::before,
+    .arrow-back::after {
+        content: '';
+        background-color: #ECBC61;
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        left: 0;
+        border-radius: 5px;
+    }
+
+    .arrow-back::before {
+        top: 1px;
+        left: -3px;
+        transform: rotate(-45deg);
+    }
+
+    .arrow-back::after {
+        bottom: 2px;
+        left: -3px;
+        transform: rotate(45deg);
+    }
+    /*header__brand*/
+    .header__brand.active {
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    /*header__menu*/
+    .header__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: rgba(8, 8, 8, 0.50);
+        backdrop-filter: blur(4.5px);
+        padding: 0 10px 20px 10px;
+        transition: all 0.4s;
+    }
+
+    .header__menu.active {
+        right: 0;
+    }
+
+    .header__list {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .header__list li {
+        margin: 20px 0 0 0;
+    }
+
+    .header__link {
+        font-size: 25px;
+    }
+
+    /*SECTION ABOUT MEDIA*/
+    .about {
+        padding: 80px 0 0 0;
+    }
+}
