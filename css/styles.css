@@ -48,16 +48,21 @@ body {
     top: 0;
     left: 0;
     z-index: 50;
+    background-color: transparent;
+    transition: transform .1s linear;
 }
 
-.header::before {
+.header.header_hide {
+    transform: translateY(-80px);
+}
+
+.header.like_a_glass::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /*background-color: #0F0F0F;*/
     background: rgba(8, 8, 8, 0.50);
     backdrop-filter: blur(4.5px);
 }
@@ -109,15 +114,81 @@ body {
     transition: all 0.2s;
 }
 
-/*SECTION ABOUT*/
-.about {
-    padding: 100px 0 0 0;
+/*SECTION WELCOME*/
+.welcome__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/designer_photo.png');
+}
+
+.welcome__title {
+    color: #FFF;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 300;
+    margin-top: 140px;
+}
+
+.welcome__subtitle {
+    color: #FFF;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 17px;
+}
+
+.welcome__subtitle.welcome__subtitle_colored {
+    color: #ECBC61;
+}
+
+.welcome__btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.welcome__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 138px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 22px;
+    border: 1px solid #FFF;
+    transition: all 0.3s;
+}
+
+.welcome__btn.welcome__btn_colored {
+    background-color: #ECBC61;
+}
+
+.welcome__btn:hover {
+    background-color: #ECBC61;
+    transition: all 0.3s;
+}
+
+.welcome__btn + .welcome__btn {
+    margin-left: 22px;
 }
 
 /*MEDIA*/
 @media (max-width: 767px) {
     body.active {
         overflow: hidden;
+    }
+
+    .header.header_hide {
+        transform: translateY(-50px);
     }
 
     .header__body {
@@ -213,6 +284,7 @@ body {
         left: -3px;
         transform: rotate(45deg);
     }
+
     /*header__brand*/
     .header__brand.active {
         opacity: 0;
@@ -251,8 +323,17 @@ body {
         font-size: 25px;
     }
 
-    /*SECTION ABOUT MEDIA*/
-    .about {
-        padding: 80px 0 0 0;
+    /*SECTION WELCOME MEDIA*/
+    .welcome__wrapper {
+        min-height: 450px;
+    }
+
+    .welcome__title {
+        font-size: 34px;
+        margin-top: 140px;
+    }
+
+    .welcome__subtitle {
+        font-size: 30px;
     }
 }
