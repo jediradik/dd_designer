@@ -515,6 +515,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .about__title {
+        font-size: 56px;
+    }
+
     .about__block.about__block_info {
         grid-row-start: 1;
     }
