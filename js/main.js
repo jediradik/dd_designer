@@ -21,22 +21,6 @@ function arrowClick() {
 burgerMenu.addEventListener("click", burgerClick);
 arrowBack.addEventListener("click", arrowClick);
 
-// Header transformation with scrolling
-// const header = document.querySelector('.header');
-// const firstSection = document.querySelector('.welcome');
-// const headerHeight = header.offsetHeight;
-// const firstSectionHeight = firstSection.offsetHeight;
-//
-// window.addEventListener("scroll", () => {
-//     let scrollDistance = window.scrollY;
-//
-//     if (scrollDistance >= firstSectionHeight + headerHeight) {
-//         header.classList.add('header_fixed');
-//     } else {
-//         header.classList.remove('header_fixed');
-//     }
-// });
-
 // Smart header
 const header = document.querySelector('.header');
 
