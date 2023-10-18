@@ -368,6 +368,10 @@ body {
 /*MEDIA*/
 @media (max-width: 1024px) {
     /*SECTION ABOUT MEDIA(1024px)*/
+    .about {
+        padding-top: 32px;
+    }
+
     .about__wrapper {
         grid-template-columns: 1fr 1fr;
         margin-top: 27px;
@@ -376,7 +380,6 @@ body {
     /*about block paddings, skills*/
     .main-title.about__title_outer {
         display: block;
-        margin-top: 32px;
         text-align: center;
     }
 
@@ -417,6 +420,12 @@ body {
     .services__list {
         grid-template-columns: 1fr 1fr;
         grid-gap: 45px;
+        margin-top: 42px;
+    }
+
+    .main-title.services__title {
+        text-align: center;
+        margin-top: 42px;
     }
 }
 
