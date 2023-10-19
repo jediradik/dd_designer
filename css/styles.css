@@ -367,6 +367,7 @@ body {
 
 /*SECTION PORTFOLIO*/
 .portfolio {
+    padding-top: 110px;
     background: #161616;
     padding-bottom: 50px;
 }
@@ -432,6 +433,11 @@ body {
     .main-title.services__title {
         text-align: center;
         margin-top: 42px;
+    }
+
+    /*SECTION PORTFOLIO MEDIA(1024px)*/
+    .portfolio {
+        padding-top: 42px;
     }
 }
 
@@ -662,10 +668,6 @@ body {
         overflow: hidden;
     }
 
-    .swiper-grid-column > .swiper-wrapper {
-        /*flex-direction: row;*/
-    }
-
     /* Pagination */
     .portfolio__slider .swiper-pagination {
         bottom: -40px;
@@ -684,6 +686,11 @@ body {
     .swiper-button-next::after {
         display: none;
     }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -700,11 +707,11 @@ body {
 }
 
 @media (min-width: 1024px) {
-    .swiper-button-prev {
+    .graphic-slider .swiper-button-prev {
         top: 47%;
     }
 
-    .swiper-button-next {
+    .graphic-slider .swiper-button-next {
         top: 47%;
     }
 
@@ -716,6 +723,7 @@ body {
         border-radius: 100%;
         background-position: center;
         background-repeat: no-repeat;
+        display: block;
     }
 
     .swiper-button-prev {
