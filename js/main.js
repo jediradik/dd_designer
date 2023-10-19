@@ -4,8 +4,9 @@ const arrowBack = document.querySelector('.arrow-back');
 const bodyLock = document.querySelector('body');
 const headerBrand = document.querySelector('.header__brand')
 
-// Burger menu logic
+//Burger menu logic
 const elementsList = [burgerMenu, headerMenu, arrowBack, bodyLock, headerBrand];
+
 function burgerClick() {
     elementsList.forEach((element) => {
         element.classList.add('active')
@@ -21,7 +22,7 @@ function arrowClick() {
 burgerMenu.addEventListener("click", burgerClick);
 arrowBack.addEventListener("click", arrowClick);
 
-// Smart header
+//Smart header
 const header = document.querySelector('.header');
 
 let lastScroll = 0;
@@ -45,4 +46,54 @@ window.addEventListener("scroll", () => {
     } else {
         header.classList.remove('like_a_glass');
     }
+});
+
+//Portfolio Slider
+const swiper = new Swiper('.graphic-slider', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+    autoHeight: false,
+    slidesPerView: 2,
+    grid: {
+        rows: 2,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            grid: {
+                rows: 4,
+            },
+        },
+        450: {
+            slidesPerView: 1.1,
+            grid: {
+                rows: 4,
+            },
+        },
+        500: {
+            slidesPerView: 1.2,
+            grid: {
+                rows: 4,
+            },
+        },
+        768: {
+            slidesPerView: 1.2,
+            grid: {
+                rows: 2,
+            },
+        },
+        1024: {
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+            },
+        },
+    },
 });

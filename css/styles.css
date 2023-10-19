@@ -365,6 +365,12 @@ body {
     letter-spacing: -0.8px;
 }
 
+/*SECTION PORTFOLIO*/
+.portfolio {
+    background: #161616;
+    padding-bottom: 50px;
+}
+
 /*MEDIA*/
 @media (max-width: 1024px) {
     /*SECTION ABOUT MEDIA(1024px)*/
@@ -624,4 +630,115 @@ body {
 
     /*SECTION SERVICES MEDIA(576px)*/
 
+}
+
+/*Mobile first settings for Swipe slider*/
+@media (min-width: 320px) {
+    /*SECTION PORTFOLIO MEDIA(min-width: 320px)*/
+    /*Portfolio slider*/
+    .graphic-slider__link {
+        color: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .graphic-slider__link img {
+        width: 100%;
+    }
+
+    .portfolio__slider {
+        position: relative;
+        margin-top: 90px;
+    }
+
+    .graphic-slider .swiper-wrapper {
+        height: 950px;
+    }
+
+    .graphic-slider .swiper-slide {
+        height: calc(100% / 4);
+        overflow: hidden;
+    }
+
+    .swiper-grid-column > .swiper-wrapper {
+        /*flex-direction: row;*/
+    }
+
+    /* Pagination */
+    .portfolio__slider .swiper-pagination {
+        bottom: -40px;
+    }
+
+    /* Bullets */
+    .portfolio__slider .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        background-color: #ECBC61;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    /*SECTION PORTFOLIO MEDIA(min-width: 767px)*/
+    /*Portfolio slider*/
+    .graphic-slider .swiper-wrapper {
+        height: 750px;
+    }
+
+    .graphic-slider .swiper-slide {
+        height: calc(100% / 2);
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1024px) {
+    .swiper-button-prev {
+        top: 47%;
+    }
+
+    .swiper-button-next {
+        top: 47%;
+    }
+
+    /*ARROWS*/
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-button-prev {
+        background-image: url("../images/arrow-prev.svg");
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .swiper-button-next {
+        background-image: url("../images/arrow-next.svg");
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 1420px) {
+    .swiper-button-prev {
+        left: -80px;
+    }
+
+    .swiper-button-next {
+        right: -65px;
+    }
 }
