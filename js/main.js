@@ -66,19 +66,13 @@ const swiper = new Swiper('.graphic-slider', {
     },
     breakpoints: {
         320: {
-            slidesPerView: 1,
-            grid: {
-                rows: 4,
-            },
-        },
-        450: {
             slidesPerView: 1.1,
             grid: {
                 rows: 4,
             },
         },
         500: {
-            slidesPerView: 1.2,
+            slidesPerView: 2,
             grid: {
                 rows: 4,
             },
