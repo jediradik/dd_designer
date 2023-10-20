@@ -55,7 +55,7 @@
 </section>
 <section class="about">
     <div class="container">
-        <h2 class="main-title about__title_outer">About Me</h2>
+        <h2 class="main-title title-primary about__title_outer">About Me</h2>
         <div class="about__wrapper">
             <div class="about__block about__block_paddings">
                 <h2 class="main-title about__title_inner">About Me</h2>
@@ -109,11 +109,10 @@
         </div>
     </div>
 </section>
-
 <section class="services">
     <div class="container">
         <div class="services__wrapper">
-            <h2 class="main-title services__title">Services</h2>
+            <h2 class="main-title title-primary">Services</h2>
             <ul class="services__list">
                 <li class="services__item">
                     <a class="services__link" href="#">
@@ -162,107 +161,213 @@
 <section class="portfolio">
     <div class="container">
         <div class="portfolio__wrapper">
-            <h2 class="main-title services__title">Portfolio</h2>
-            <div class="portfolio__slider">
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <!-- Slider main container -->
-                <div class="graphic-slider swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="graphic-slider__wrapper swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-1.png" alt="slider-pic">
-                            </a>
+            <h2 class="main-title title-primary">Portfolio</h2>
+            <div class="portfolio__tabs tabs">
+                <div class="tabs__btns">
+                    <button class="tab-1 active">WEB</button>
+                    <button class="tab-2">GRAPHIC</button>
+                    <button class="tab-3">ALL</button>
+                </div>
+                <div class="tabs__content tabs__content_1 active">
+                    <div class="portfolio__graphic-slider">
+                        <!-- If we need navigation buttons -->
+                        <div class="graphic-slider-btn swiper-button-prev"></div>
+                        <div class="graphic-slider-btn swiper-button-next"></div>
+                        <!-- Slider main container -->
+                        <div class="graphic-slider swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="graphic-slider__wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-1.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-2.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-3.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-4.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-1.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-2.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-3.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-4.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-1.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-2.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-3.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-4.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-1.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-2.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-3.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="graphic-slider__slide swiper-slide">
+                                    <a href="#" class="graphic-slider__link">
+                                        <img src="images/slider-4.png" alt="slider-pic">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-2.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-3.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-4.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-1.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-2.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-3.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-4.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-1.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-2.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-3.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-4.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-1.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-2.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-3.png" alt="slider-pic">
-                            </a>
-                        </div>
-                        <div class="graphic-slider__slide swiper-slide">
-                            <a href="#" class="graphic-slider__link">
-                                <img src="images/slider-4.png" alt="slider-pic">
-                            </a>
-                        </div>
+                        <!-- If we need pagination -->
+                        <div class="graphic-slider-pagination swiper-pagination"></div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="tabs__content tabs__content_2">
+                    <div class="portfolio__web-slider">
+                        <!-- If we need navigation buttons -->
+                        <div class="web-slider-btn swiper-button-prev"></div>
+                        <div class="web-slider-btn swiper-button-next"></div>
+                        <!-- Slider main container -->
+                        <div class="web-slider swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="web-slider__wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                                <div class="web-slider__slide swiper-slide">
+                                    <a href="#" class="web-slider__link">
+                                        <img src="images/Jax.jpg" alt="slider-pic">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="web-slider-pagination swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="tabs__content tabs__content_3">AAAAAAAAAAAAAAAAA</div>
             </div>
         </div>
     </div>
 </section>
 <section class="contact">
     <div class="container">
-        <h2 class="main-title contact__title">Contact Me</h2>
+        <h2 class="main-title title-primary">Contact Me</h2>
         <div class="contact__wrapper">
             <div class="contact__contacts">
                 <div class="contact__box">
@@ -282,7 +387,7 @@
             </div>
             <form class="contact__form">
                 <input type="text" name="name" id="contact-name" placeholder="Name">
-                <input type="email" name="email" id="contact-email"placeholder="Email">
+                <input type="email" name="email" id="contact-email" placeholder="Email">
                 <input type="text" name="subject" id="contact-subject" placeholder="Subject">
                 <textarea name="message" id="contact-message" placeholder="Message"></textarea>
                 <button type="submit">Send Message</button>
@@ -290,99 +395,21 @@
         </div>
     </div>
 </section>
-<section class="test">
+<footer class="footer">
     <div class="container">
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci excepturi ipsa maxime non pariatur rem
-            vel,
-            voluptates. Ab consequatur dolores enim, est exercitationem incidunt officiis quia repudiandae similique
-            sunt.
-            Debitis?
-        </div>
-        <div>Ab commodi consectetur distinctio doloribus eos ipsa non sed, veniam. Consectetur cum cupiditate
-            distinctio,
-            ducimus et, illum, impedit inventore maiores nam nisi officiis placeat rem repellat sequi tenetur voluptate
-            voluptates.
-        </div>
-        <div>Cupiditate dolorem eos et laudantium magnam, nihil nobis praesentium quaerat qui quisquam quod repudiandae
-            sint
-            totam vitae voluptatum. Accusantium consectetur culpa maxime modi molestiae quod reiciendis rerum similique
-            tempora totam?
-        </div>
-        <div>Eveniet, laborum, suscipit! Aliquid consequuntur dolorem esse fuga, placeat quos ratione repellendus sit
-            soluta
-            veritatis. Esse incidunt labore vel? Blanditiis ducimus earum eius facilis id ipsum libero possimus ullam
-            vitae!
-        </div>
-        <div>Accusamus illum itaque molestiae natus sed soluta tempora ut? At distinctio dolores eveniet fuga magni
-            maiores
-            nemo quam quibusdam recusandae saepe sunt, totam ullam voluptates? Assumenda excepturi nemo repellendus
-            totam!
-        </div>
-        <div>Alias, magni, ratione. Aut corporis dolor fuga iure magni molestiae, nulla possimus, quae quasi quidem,
-            quod
-            suscipit vitae voluptas! Aspernatur dolorum est ipsa iste numquam quas, rerum soluta tempore voluptatibus.
-        </div>
-        <div>Atque consectetur deserunt dolorum eos fugiat nesciunt ut voluptas. Alias corporis cum dolor exercitationem
-            explicabo hic nisi quidem quo quos, reprehenderit vitae voluptates? Alias doloribus molestiae quisquam
-            repellat
-            saepe voluptatum.
-        </div>
-        <div>Adipisci aut commodi consectetur, doloribus illo numquam perferendis provident quibusdam quod,
-            reprehenderit
-            sed sequi totam! Ad, impedit, odio. Aut consectetur exercitationem iste magni nam nihil nulla praesentium
-            quo
-            ratione voluptas?
-        </div>
-        <div>Cumque deserunt eaque est exercitationem expedita facilis magnam minima nemo, omnis porro quia quos
-            repudiandae
-            sint. Ad esse id officiis sit voluptate. Amet dolores illum laboriosam provident quam quod sapiente.
-        </div>
-        <div>Aut cupiditate debitis distinctio dolor error ex hic magni nihil praesentium, quae quaerat quas quibusdam
-            quisquam repellat, similique sunt vel. Animi eaque iure maiores nemo neque nisi odit, veniam voluptates?
-        </div>
-        <div>Ad, amet architecto aut commodi consequuntur, ducimus exercitationem expedita incidunt iste laudantium
-            molestias nulla omnis pariatur porro quae quod, reprehenderit? Adipisci corporis dolore magni quae ut! Aut
-            nobis
-            rem voluptate.
-        </div>
-        <div>Architecto aspernatur at consequatur doloremque earum enim est, ex fuga impedit laborum libero minima
-            necessitatibus nobis numquam pariatur porro possimus quibusdam sequi tempore ut velit veritatis voluptate
-            voluptatem voluptatibus voluptatum!
-        </div>
-        <div>Aliquid asperiores cumque ea eligendi et fugit illum laudantium nemo nobis, non numquam odit perferendis
-            voluptatem! Aperiam dolore dolorem dolores ex fugiat, laudantium magnam nemo nisi nobis non odit rem?
-        </div>
-        <div>Accusantium adipisci aliquid expedita hic iure nemo odio qui quidem quos tenetur. Atque dicta esse, est
-            exercitationem quaerat quis vero. Commodi, in ratione? Autem iure magnam praesentium quidem saepe soluta!
-        </div>
-        <div>A accusantium doloremque inventore omnis provident saepe sed sequi? Blanditiis cum exercitationem magni.
-            Asperiores at dignissimos, ea eaque est, eum fugit magnam modi nesciunt odio quam quasi, ratione ullam
-            veniam.
-        </div>
-        <div>Aliquam asperiores hic id! Animi asperiores beatae commodi consequatur doloremque enim eos est eum
-            exercitationem fugit, harum hic id nulla obcaecati porro praesentium qui recusandae rerum suscipit velit
-            veniam
-            voluptates.
-        </div>
-        <div>Accusamus accusantium aliquid amet beatae culpa deserunt dolorem doloremque ducimus eaque eius error et
-            expedita fugiat inventore iste iure iusto magni minima nisi nostrum officiis, omnis praesentium quisquam
-            quos
-            suscipit.
-        </div>
-        <div>At blanditiis commodi consequuntur cum laboriosam laborum, necessitatibus nesciunt, omnis quaerat ratione
-            recusandae soluta sunt tempora? Accusamus, aliquid debitis dicta dignissimos ea exercitationem hic ipsum
-            reprehenderit tenetur veritatis voluptatem, voluptatibus.
-        </div>
-        <div>Exercitationem illum itaque maxime optio quam quisquam quo, sed. Amet autem debitis dignissimos error eum
-            excepturi illo ipsa laborum mollitia, nemo neque nobis quaerat quasi qui, rem rerum soluta voluptas?
-        </div>
-        <div>Blanditiis culpa dolorum ea eaque error eveniet facilis fugit impedit libero maiores maxime minima natus,
-            necessitatibus nesciunt odio quaerat quidem quisquam, recusandae reiciendis saepe sequi tempore ut
-            voluptates
-            voluptatibus voluptatum.
+        <div class="footer__wrapper">
+            <a href="#" class="footer__brand">DD</a>
+            <ul class="footer__social-list">
+                <li><a class="footer__link" href="#"><img src="images/linkedin.svg" alt="social-icon"></a></li>
+                <li><a class="footer__link" href="#"><img src="images/instagram.svg" alt="social-icon"></a></li>
+                <li><a class="footer__link" href="#"><img src="images/facebook.svg" alt="social-icon"></a></li>
+                <li><a class="footer__link" href="#"><img src="images/be.svg" alt="social-icon"></a></li>
+                <li><a class="footer__link" href="#"><img src="images/twitter.svg" alt="social-icon"></a></li>
+            </ul>
+            <div class="sale-brand">© 2023 Designed by Daryna Dmytrenko</div>
         </div>
     </div>
-</section>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
