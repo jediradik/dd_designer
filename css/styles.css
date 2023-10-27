@@ -393,10 +393,17 @@ body {
     background-color: transparent;
     padding: 7px 10px;
     margin-right: 20px;
+    cursor: pointer;
+    border-radius: 27px;
+    transition: all .2s linear;
+}
+
+.tabs__btns button:hover {
+    background: #ECBC61;
+    transition: all .3s linear;
 }
 
 .tabs__btns button.active {
-    border-radius: 27px;
     background: #ECBC61;
 }
 
@@ -883,6 +890,14 @@ body {
     .graphic-slider__link img,
     .web-slider__link img {
         width: 100%;
+        filter: grayscale(100%);
+        transition: all .3s linear;
+    }
+
+    .graphic-slider__link img:hover,
+    .web-slider__link img:hover {
+        filter: grayscale(0);
+        transition: all .3s linear;
     }
 
     .portfolio__graphic-slider,
