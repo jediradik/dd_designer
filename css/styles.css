@@ -591,6 +591,30 @@ body {
     font-weight: 600;
 }
 
+/* PORTFOLIO(GALLERY) PAGE */
+.gallery__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.gallery__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__link img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all .3s linear;
+}
+
+.gallery__link img:hover {
+    filter: grayscale(0);
+    transition: all .3s linear;
+}
+
 /*MEDIA*/
 @media (max-width: 1024px) {
     /*SECTION ABOUT MEDIA(1024px)*/
