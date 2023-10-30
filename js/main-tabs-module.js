@@ -1,6 +1,6 @@
 //Main tabs
-const mainTabsList = ['.tab-1', '.tab-2', '.tab-3'];
-const mainContentsList = ['.tabs__content_1', '.tabs__content_2', '.tabs__content_3'];
+const mainTabsList = ['.tab-1', '.tab-2'];
+const mainContentsList = ['.tabs__content_1', '.tabs__content_2'];
 
 const mainTabs = new Tabs(mainTabsList, mainContentsList);
 
