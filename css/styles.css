@@ -397,6 +397,7 @@ body {
     cursor: pointer;
     border-radius: 27px;
     transition: all .2s linear;
+    outline: none;
 }
 
 .tabs__btns button:hover,
