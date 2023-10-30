@@ -397,7 +397,7 @@ body {
     cursor: pointer;
     border-radius: 27px;
     transition: all .2s linear;
-    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .tabs__btns button:hover,
