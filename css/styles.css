@@ -335,20 +335,37 @@ body {
 .services__item {
     border-radius: 13px;
     background: #0A0A0C;
-    padding: 25px 16px 45px 16px;
+    padding: 35px 16px 45px 16px;
 }
 
 .services__link {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 100%;
+}
+
+.services__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-figure {
+    transform: rotate(45deg);
+    border-radius: 23px;
+    background: #131315;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .services__img {
-    width: 82px;
-    height: 82px;
-    margin-bottom: 15px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
 }
 
 .services__service-title {
@@ -356,7 +373,8 @@ body {
     text-align: center;
     font-size: 16px;
     font-weight: 900;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .services__info {
