@@ -594,6 +594,10 @@ body {
 }
 
 /* PORTFOLIO(GALLERY) PAGE */
+.gallery .tabs__content {
+    overflow: hidden;
+}
+
 .gallery__tabs {
     margin-bottom: 45px;
 }
