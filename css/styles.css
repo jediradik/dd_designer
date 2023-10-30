@@ -925,6 +925,10 @@ body {
     .main-title {
         font-size: 50px;
     }
+
+    .gallery__list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /*Mobile first settings for Swipe slider*/
